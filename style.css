@@ -1,0 +1,79 @@
+ @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.fundopreto{
+    background-color: black;
+}
+
+.cordotextobranca{
+    color: white;
+}
+.cordotextoazul{
+    color: #22d4fd;
+}
+.conteudo{
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+.conteudo__justificado{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 615px;
+    text-align: justify;
+}
+.conteudo__titulo{
+    font-family: "Roboto Slab", serif;
+    font-size: 36px;
+    color: white;
+}
+
+.conteudo__texto{
+    font-family: "Reddit Sans Condensed", sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.imagem{
+    width: 500px;
+}
+
+.conteudo__botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.conteudo__botoes__link{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(139, 191, 236);
+    text-decoration: 0;
+    margin: 15px;
+    padding: 25px 0px;
+    font-size: 24px;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    color:white;
+}
+
+.conteudo__botoes__textosuperior{
+    color: white;
+}
