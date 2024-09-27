@@ -1,5 +1,13 @@
  @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&family=Roboto+Slab:wght@100..900&display=swap');
-*{
+
+:root{
+    --cor-primaria:black;
+    --cor-secundaria: white;
+    --cor-terciaria:#22d4fd;
+    --cor-quaternaria:rgb(59, 58, 58);
+}
+
+ *{
     margin: 0;
     padding: 0;
 }
@@ -10,14 +18,14 @@ body{
 }
 
 .fundopreto{
-    background-color: black;
+    background-color: var(--cor-primaria);
 }
 
 .cordotextobranca{
-    color: white;
+    color: var(--cor-secundaria);
 }
 .cordotextoazul{
-    color: #22d4fd;
+    color:var(--cor-terciaria);
 }
 .conteudo{
     
@@ -32,20 +40,20 @@ body{
     display: flex;
     gap: 40px;
     flex-direction: column;
-    justify-content:space-between;
-    width: 615px;
+    justify-content:center;
+    width: 800px;
     text-align: justify;
 }
 .conteudo__titulo{
     font-family: "Roboto Slab", serif;
     font-size: 36px;
-    color: white;
+    color: var(--cor-secundaria);
 }
 
 .conteudo__texto{
     font-family: "Reddit Sans Condensed", sans-serif;
-    font-size: 18px;
-    color: rgb(255, 255, 255);
+    font-size: 15px;
+    color: var(--cor-secundaria);
     
 }
 
@@ -68,7 +76,7 @@ body{
     align-items: center;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(139, 191, 236);
+    border-color: var(--cor-terciaria);
     text-decoration: 0;
     margin: 5px;
     padding: 25px 0px;
@@ -76,14 +84,13 @@ body{
     width: 280px;
     text-align: center;
     border-radius: 16px;
-    color:white;
+    color:var(--cor-terciaria);
 }
 .conteudo__botoes__link:hover{
-    background-color:rgb(59, 58, 58);
+    background-color:var(--cor-secundaria);
 }
-
 .conteudo__botoes__textosuperior{
-    color: white;
+    color: var(--cor-secundaria);
     font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -95,8 +102,8 @@ body{
     font-size: 20px;
     text-align: center;
     padding: 24px;
-    color: rgb(43, 40, 40);
-    background-color: #22d4fd;
+    color:var(--cor-quaternaria);
+    background-color: var(--cor-terciaria);
 }
 .cabecalho{
     padding: 2% 0% 0% 15%;
@@ -107,7 +114,8 @@ body{
     align-items: center;
 }
 .cabecalho__menu__link{
+    text-decoration: none;
     font-size: 18px;
     font-family: 'Montserrast', sans-serif;
-    color: #22d4fd;
+    color: var(--cor-secundaria);
 }
