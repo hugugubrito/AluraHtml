@@ -1,5 +1,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&family=Roboto+Slab:wght@100..900&display=swap');
 
+
 :root{
     --cor-primaria:black;
     --cor-secundaria: white;
@@ -28,11 +29,11 @@ body{
     color:var(--cor-terciaria);
 }
 .conteudo{
-    
-    padding: 8% 15%;
+    padding: 5% 10%;
     display: flex;
     align-items: center;
     justify-content:space-between;
+    gap: 52px;
     
 }
 
@@ -41,25 +42,25 @@ body{
     gap: 40px;
     flex-direction: column;
     justify-content:center;
-    width: 800px;
+    width: 50%;
     text-align: justify;
 }
 .conteudo__titulo{
     font-family: "Roboto Slab", serif;
-    font-size: 36px;
+    font-size: 2.25rem;
     color: var(--cor-secundaria);
 }
 
 .conteudo__texto{
     font-family: "Reddit Sans Condensed", sans-serif;
-    font-size: 15px;
+    font-size: 0.93rem;
     color: var(--cor-secundaria);
     
 }
 
 .imagem{
     margin: 15px;
-    width: 500px;
+    width: 50%;
 }
 
 .conteudo__botoes{
@@ -80,7 +81,7 @@ body{
     text-decoration: 0;
     margin: 5px;
     padding: 25px 0px;
-    font-size: 24px;
+    font-size: 21.5re;
     width: 280px;
     text-align: center;
     border-radius: 16px;
@@ -91,7 +92,7 @@ body{
 }
 .conteudo__botoes__textosuperior{
     color: var(--cor-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
 }
 .conteudo__botoes__img{
@@ -99,7 +100,7 @@ body{
     margin: 1px 20px;
 }
 .rodape{
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     padding: 24px;
     color:var(--cor-quaternaria);
@@ -115,7 +116,27 @@ body{
 }
 .cabecalho__menu__link{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.12rem;
     font-family: 'Montserrast', sans-serif;
-    color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+}
+
+@media (max-width:1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .conteudo{
+        flex-direction: column-reverse;
+        padding: 5%;
+
+    }
+    .conteudo__justificado{
+        width: auto;
+    }
+    .imagem{
+        width: auto;
+    }
 }
